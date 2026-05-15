@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Rakta_Seva" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryDark">@color/red_dark</item>
+        <item name="colorAccent">@color/red_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/status_bar_red</item>
+        <item name="android:windowBackground">@color/gray_light</item>
+    </style>
+
+    <style name="Theme.Rakta_Seva" parent="Base.Theme.Rakta_Seva" />
+
+    <!-- Splash screen theme -->
+    <style name="Theme.Rakta_Seva.Splash" parent="Base.Theme.Rakta_Seva">
+        <item name="android:windowBackground">@color/red_primary</item>
+        <item name="android:statusBarColor">@color/red_dark</item>
+    </style>
+
+    <!-- Red filled button style -->
+    <style name="RedFilledButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/red_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Outlined red button style -->
+    <style name="OutlinedRedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/red_primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/red_primary</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Outlined gray button style (for Reject) -->
+    <style name="OutlinedGrayButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/gray_outline</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Green filled button style -->
+    <style name="GreenFilledButton" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/green_available</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Card style -->
+    <style name="CardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/card_bg</item>
+    </style>
+
+    <!-- Input field style -->
+    <style name="InputFieldStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/red_primary</item>
+        <item name="hintTextColor">@color/red_primary</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+    </style>
+
+</resources>
