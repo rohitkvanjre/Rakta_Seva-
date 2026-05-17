@@ -39,7 +39,8 @@ public class LoginActivity extends AppCompatActivity {
                 return;
             }
 
-            if (phone.equals("9876543210")) {
+            com.example.rakta_seva.data.DonorEntity donor = com.example.rakta_seva.data.AppDatabase.getInstance(this).donorDao().getDonorByPhone(phone);
+            if (donor != null || phone.equals("9876543210")) {
                 Intent intent = new Intent(LoginActivity.this, OtpActivity.class);
                 intent.putExtra("phone", phone);
                 startActivity(intent);

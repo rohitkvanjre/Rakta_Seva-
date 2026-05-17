@@ -175,88 +175,62 @@
                 android:layout_marginTop="8dp"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RadioButton
+                    android:id="@+id/rb_donate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_input_field"
-                    android:orientation="vertical"
-                    android:padding="12dp"
-                    android:layout_marginBottom="8dp">
+                    android:text="Donate Blood Only"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/red_primary" />
 
-                    <RadioButton
-                        android:id="@+id/rb_donate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Donate Blood Only"
-                        android:textColor="@color/text_primary"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:buttonTint="@color/red_primary" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="36dp"
-                        android:text="I want to help others by donating blood"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_input_field"
-                    android:orientation="vertical"
-                    android:padding="12dp"
-                    android:layout_marginBottom="8dp">
+                    android:layout_marginStart="36dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="I want to help others by donating blood"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
 
-                    <RadioButton
-                        android:id="@+id/rb_request"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Request Blood Only"
-                        android:textColor="@color/text_primary"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:buttonTint="@color/red_primary" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="36dp"
-                        android:text="I may need blood in emergencies"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
+                <RadioButton
+                    android:id="@+id/rb_request"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_input_field"
-                    android:orientation="vertical"
-                    android:padding="12dp">
+                    android:text="Request Blood Only"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/red_primary" />
 
-                    <RadioButton
-                        android:id="@+id/rb_both"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Both Donate &amp; Request"
-                        android:textColor="@color/red_primary"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:buttonTint="@color/red_primary" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="I may need blood in emergencies"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="36dp"
-                        android:text="I want to donate and may need blood too"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
+                <RadioButton
+                    android:id="@+id/rb_both"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Both Donate &amp; Request"
+                    android:textColor="@color/red_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:buttonTint="@color/red_primary" />
 
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="I want to donate and may need blood too"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
 
             </RadioGroup>
 

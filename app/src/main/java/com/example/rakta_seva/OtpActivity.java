@@ -61,18 +61,41 @@ public class OtpActivity extends AppCompatActivity {
 
             if (otp.equals("1234")) {
                 SessionManager session = new SessionManager(this);
-                session.saveLoginSession(
-                        "Rajesh Kumar",
-                        "9876543210",
-                        "O-",
-                        28,
-                        "Male",
-                        "rajesh.kumar@email.com",
-                        "Sector 12, New Delhi",
-                        "March 15, 2026",
-                        true,
-                        true
-                );
+                
+                com.example.rakta_seva.data.DonorEntity donor = null;
+                if (phoneNumber != null) {
+                    donor = com.example.rakta_seva.data.AppDatabase.getInstance(this).donorDao().getDonorByPhone(phoneNumber);
+                }
+                
+                if (donor != null) {
+                    session.saveLoginSession(
+                            donor.name,
+                            donor.phone,
+                            donor.bloodGroup,
+                            donor.age,
+                            donor.gender,
+                            donor.email,
+                            donor.location,
+                            donor.lastDonationDate,
+                            donor.isVerified,
+                            donor.isAvailable
+                    );
+                    session.setUserType(donor.userType);
+                } else {
+                    session.saveLoginSession(
+                            "Rajesh Kumar",
+                            "9876543210",
+                            "O-",
+                            28,
+                            "Male",
+                            "rajesh.kumar@email.com",
+                            "Sector 12, New Delhi",
+                            "March 15, 2026",
+                            true,
+                            true
+                    );
+                    session.setUserType("donor");
+                }
 
                 Intent intent = new Intent(OtpActivity.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
