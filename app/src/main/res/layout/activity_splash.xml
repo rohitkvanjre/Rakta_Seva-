@@ -13,32 +13,10 @@
 
         <ImageView
             android:id="@+id/splash_logo"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:src="@drawable/ic_blood_drop_logo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/rakta_seva_logo"
             android:contentDescription="Rakta Seva Logo" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="RAKTA-SEVA"
-            android:textColor="@color/white"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-black"
-            android:letterSpacing="0.15" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="CONNECT"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:fontFamily="sans-serif-medium"
-            android:letterSpacing="0.3"
-            android:alpha="0.9" />
 
         <TextView
             android:layout_width="wrap_content"

@@ -27,7 +27,7 @@
                 <ImageView
                     android:layout_width="28dp"
                     android:layout_height="28dp"
-                    android:src="@drawable/ic_blood_drop_logo"
+                    android:src="@drawable/rakta_seva_logo"
                     android:contentDescription="Logo" />
 
                 <TextView

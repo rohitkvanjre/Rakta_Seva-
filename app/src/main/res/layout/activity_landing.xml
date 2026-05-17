@@ -15,20 +15,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:src="@drawable/ic_blood_drop_logo"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:src="@drawable/rakta_seva_logo"
             android:contentDescription="App Logo" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Rakta-Seva Connect"
-            android:textColor="@color/text_primary"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:fontFamily="sans-serif-medium" />
 
         <TextView
             android:layout_width="wrap_content"
